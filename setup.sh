@@ -27,6 +27,7 @@ cp ./.vimrc ~/.vimrc
 echo Load .bashrc file
 cp ./.bashrc ~/.bashrc
 # dircolors -b >> .bashrc
+source ~/.bashrc
 
 # load .gitconfig file
 echo Load .gitconfig file
@@ -105,7 +106,6 @@ sudo apt install gh
 
 
 # reboot
-sudo source ~/.bashrc
 echo ---
 echo rebooting now ...
 echo ---

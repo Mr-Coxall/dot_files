@@ -28,6 +28,8 @@ echo Load .bashrc file
 cp ./.bashrc ~/.bashrc
 # dircolors -b >> .bashrc
 cp ./.bash_login ~/.bash_login
+#echo '# activate new .bashrc file' >> ~/.profile
+#echo 'source ~/.bashrc' >> ~/.profile
 
 # load .gitconfig file
 echo Load .gitconfig file

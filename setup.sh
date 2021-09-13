@@ -25,13 +25,14 @@ cp ./.vimrc ~/.vimrc
 
 # load .bashrc file
 echo Load .bashrc file
-> .bashrc
+> ~/.bashrc
 cp ./.bashrc ~/.bashrc
 # dircolors -b >> .bashrc
 sudo chown ubuntu ~/.bash_profile
 echo '' >> ~/.bash_profile
-echo '# source the .bashrc file every time a new terminal is open' >> ~/.bash_profile
-echo 'source ~/.bash_profile' >> ~/.bash_profile
+echo 'if [ -f $HOME/.bashrc ]; then' >> ~/.bash_profile
+echo '        source $HOME/.bashrc' >> ~/.bash_profile
+echo 'if' >> ~/.bash_profile
 
 
 # load .gitconfig file

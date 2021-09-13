@@ -31,8 +31,8 @@ cp ./.bashrc ~/.bashrc
 sudo chown ubuntu ~/.bash_profile
 echo '' >> ~/.bash_profile
 echo 'if [ -f $HOME/.bashrc ]; then' >> ~/.bash_profile
-echo '        source $HOME/.bashrc' >> ~/.bash_profile
-echo 'if' >> ~/.bash_profile
+echo '    source $HOME/.bashrc' >> ~/.bash_profile
+echo 'fi' >> ~/.bash_profile
 
 
 # load .gitconfig file

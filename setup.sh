@@ -27,11 +27,7 @@ cp ./.vimrc ~/.vimrc
 echo Load .bashrc file
 cp ./.bashrc ~/.bashrc
 # dircolors -b >> .bashrc
-# ensure .bashrc runs when you SSH into it
-echo '# include .bashrc if it exists' >> ~/.bash_profile
-echo 'if [ -f "$HOME/.bashrc" ]; then' >> ~/.bash_profile
-echo '    . "$HOME/.bashrc"' >> ~/.bash_profile
-echo 'fi' >> ~/.bash_profile
+cp ./.bash_login ~/.bash_login
 
 # load .gitconfig file
 echo Load .gitconfig file

@@ -74,17 +74,17 @@ cp ./mr-coxall_checks.xml ~/scripts/
 # https://swift.org/download/
 echo load Swift
 sudo apt-get install -y clang libblocksruntime0 libcurl4-openssl-dev -y
-wget https://swift.org/builds/swift-5.4.2-release/ubuntu2004/swift-5.4.2-RELEASE/swift-5.4.2-RELEASE-ubuntu20.04.tar.gz
-tar -zxvf swift-5.4.2-RELEASE-ubuntu20.04.tar.gz
+wget https://swift.org/builds/swift-5.4.3-release/ubuntu2004/swift-5.4.3-RELEASE/swift-5.4.3-RELEASE-ubuntu20.04.tar.gz
+tar -zxvf swift-5.4.3-RELEASE-ubuntu20.04.tar.gz
 sudo mkdir /usr/bin/swift
-sudo cp -R ./swift-5.4.2-RELEASE-ubuntu20.04/usr/* /usr/bin/swift
+sudo cp -R ./swift-5.4.3-RELEASE-ubuntu20.04/usr/* /usr/bin/swift
 echo "" >> ~/.bashrc
 echo 'export PATH="${PATH}":/usr/bin/swift/bin' >> ~/.bashrc
 
 # SwiftLint
-# https://github.com/realm/SwiftLint/releases
+# https://github.com/realm/SwiftLint/releases to get latest release
 echo load SwiftLint for Swift
-wget https://github.com/realm/SwiftLint/releases/download/0.43.1/swiftlint_linux.zip
+wget https://github.com/realm/SwiftLint/releases/download/0.44.0/swiftlint_linux.zip
 unzip -n swiftlint_linux.zip
 sudo mkdir /usr/bin/swiftlint
 sudo cp ./swiftlint /usr/bin/swiftlint/

@@ -35,6 +35,6 @@ else
 fi
 
 # update remote
-git add README.md
+git add *
 git commit -m "init"
 git push origin main

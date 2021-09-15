@@ -10,7 +10,7 @@ cd $1
 # create the local repo                                                          
 git init --initial-branch=main                                                   
 # then the remote                                                                
-gh repo create $1  --private --gitignore $2  --license "unlicense" --confirm
+gh repo create $1  --public --gitignore $2  --license "unlicense" --confirm
 git pull origin main
 
 # create README.md

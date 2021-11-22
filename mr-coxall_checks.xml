@@ -324,7 +324,7 @@
       <property name="tokens" value="ENUM_DEF"/>
       <property name="tokens" value="RECORD_DEF"/>
       <property name="tokens" value="COMPACT_CTOR_DEF"/>
-      <property name="option" value="alone"/>
+      <property name="option" value="same"/>
     </module>
     <module name="RightCurly">
       <property name="tokens" value="LITERAL_DO"/>

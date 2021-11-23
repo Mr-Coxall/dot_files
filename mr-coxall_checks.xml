@@ -663,9 +663,11 @@
                        TokenStreamException, IOException, Override, Deprecated, SafeVarargs,
                        SuppressWarnings, FunctionalInterface"/>
     </module>
+<!--
     <module name="CyclomaticComplexity">
       <property name="switchBlockAsSingleDecisionPoint" value="true"/>
     </module>
+-->
     <module name="JavaNCSS"/>
     <module name="NPathComplexity"/>
 
@@ -775,9 +777,11 @@
 
     <!-- Size Violations -->
     <module name="AnonInnerLength"/>
+    <!--
     <module name="ExecutableStatementCount">
       <property name="max" value="30"/>
     </module>
+    -->
     <module name="LambdaBodyLength"/>
     <module name="MethodCount">
       <property name="maxTotal" value="34"/>
